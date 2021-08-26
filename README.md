@@ -1,1 +1,0 @@
-# omarkhazrietu.github.io
