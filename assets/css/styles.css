@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
 :root {
-  --main-color: #efaf3f;
+  --main-color: #640d0d
+  ;
   --background: #1d1d1e;
   --secondary: #262626;
   --link: #f54254;
   --text-color: #fff;
   --secondary-text-color: #dcdcdc;
+
+  --main-second-color:#a91906;
 }
 
 /* scroll bar */
@@ -126,6 +131,8 @@
   font-size: 15px;
   margin-top: 15px;
   margin-bottom: 20px;
+  font-family: 'Fira Code', sans-serif;
+  font-weight: 600  ;
 }
 
 a:hover {
@@ -323,3 +330,93 @@ img {
     background-position: 20vw;
   }
 }
+
+
+.nav-item{
+  font-family: 'Fire Code', sans-serif ;
+  font-weight: 700;
+}
+
+.d-xl-flex{
+  font-family: 'Fire Code', sans-serif ;
+  font-weight: 600;
+}
+
+.navbar-brand{
+  color: #00c0ff;
+}
+
+.Boba{
+  font-family: 'Fire Code', sans-serif ;
+  font-weight: 600;
+}
+
+.btn2 {
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease;
+  position: relative;
+  border: 2px solid #111;
+  margin: 0 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btn2::before,
+.btn2::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.btn7 {
+  border: none;
+}
+
+.btn7:before,
+.btn7:after {
+  border: 2px solid var(--main-color);
+  transition: all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.btn7:hover:after {
+  width: 63px;
+  animation: anim7a 1.5s infinite linear;
+}
+
+.btn7:hover:before {
+  width: 63px;
+  animation: anim7b 1.5s infinite linear;
+}
+
+@keyframes anim7a {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes anim7b {
+  from {
+    transform: rotate(0.125turn);
+  }
+  to {
+    transform: rotate(1.125turn);
+  }
+}
+.uri{
+  margin-top: 12px;
+
+}
+.uro{
+  margin-top: 12px;
+  margin-left: -5px;
+}
+
+
